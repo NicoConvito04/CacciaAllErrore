@@ -34,5 +34,18 @@ namespace Operazioni
 
             return valore;
         }
+
+        public static double MisurazioneMisteriosa(double[] valori)
+        {
+
+            double a = 0;
+            for (int i = 0; i < valori.Length; i++)
+            {
+                if (valori[i] < a)
+                    a = i;
+            }
+            return a;
+        }
+
     }
 }

@@ -24,6 +24,16 @@ namespace OperazioniTests
             Assert.AreEqual(valore_aspettato, resp);
         }
 
+        [TestMethod]
+        public void TestMisurazioneMisteriosa()
+        {
+            double[] valori = new double[4] { 4, 6, 7, -9.1 };
+            double valore_aspettato = 3;
+            double resp = Gestione.MisurazioneMisteriosa(valori);
+            Assert.AreEqual(valore_aspettato, resp);
+        }
+
+
     }
 }
 
