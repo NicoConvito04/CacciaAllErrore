@@ -15,6 +15,15 @@ namespace OperazioniTests
                 Assert.AreEqual(valore_aspettato , resp);
         }
 
+        [TestMethod]
+        public void TestCalcoloMisterioso2()
+        {
+            int n = -100;
+            long valore_aspettato = -3;
+            long resp = Gestione.CalcoloMisterioso2(n);
+            Assert.AreEqual(valore_aspettato, resp);
+        }
+
     }
 }
 
